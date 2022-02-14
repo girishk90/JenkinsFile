@@ -8,7 +8,7 @@ stage('Build')
 {
 steps
 {
-sh "mvn clean"
+bat "mvn clean"
 }
 }
 stage('deploy')
@@ -20,7 +20,7 @@ echo 'deploying the code'
 stage('test')
 {
 steps{
-sh "mvn test"
+bat "mvn test"
 }
 }
 stage('Release')
